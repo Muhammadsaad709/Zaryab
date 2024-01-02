@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC Cricket</title>
+</head>
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">ICC Cricket</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900"><b>Home</b></a>
+            <a class="mr-5 hover:text-gray-900"><b>Score</b></a>
+            <a class="mr-5 hover:text-gray-900"><b>Ranking</b></a>
+            <a class="mr-5 hover:text-gray-900"><b>Awards</b></a>
+            <a class="mr-5 hover:text-gray-900"><b>ICC.Tv</b></a>
+            <a href="index.html"><b>Create Account <Form></Form></b>
+            
+
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Live Match
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="data:image/jpeg;base64,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">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Best bowler in 2016</h2>
+              <p class="leading-relaxed text-base">Muhammad Amir's fiery pace on the pitch strikes fear into batsmen's hearts..</p>
+              <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Check his history</button>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="data:image/jpeg;base64,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">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Younger fast bowler</h2>
+              <p class="leading-relaxed text-base">Despite his youth, Muhammad Amir blazes through with remarkable speed on the cricket field, leaving batsmen astounded.</p>
+              <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Amir's Career</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+            <img alt="feature" class="object-cover object-center h-full w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYMD2a_xjk3CNoneP1wJO9g8oLBoPZoMFBw&usqp=CAU">
+          </div>
+          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+            <div class="flex flex-col mb-10 lg:items-start items-center">
+              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Debuted in 2009</h2>
+                <p class="leading-relaxed text-base">At just 17, Amir's left-arm pace bowling garnered immediate attention for its speed, swing, and accuracy. His notable performance in the 2009 T20 World Cup and subsequent rise in Test cricket established him as a rising star..</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col mb-10 lg:items-start items-center">
+              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Spot-fixing scandal in 2010</h2>
+                <p class="leading-relaxed text-base"> his suspension from cricket and a subsequent ban. After serving his suspension, Amir made a comeback to international cricket in 2016, displaying his prowess once again with the ball.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col mb-10 lg:items-start items-center">
+              <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Throughout his career</h2>
+                <p class="leading-relaxed text-base">Amir was known for his ability to swing the ball at a brisk pace, troubling batsmen with his lethal deliveries. Despite the ups and downs, his contribution to Pakistan's fast bowling legacy remains noteworthy.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="text-gray-600 body-font relative">
+          <div class="absolute inset-0 bg-gray-300">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.913461383193!2d55.22063687342855!3d25.037010728782178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6de03a0978e9%3A0x5ac4bea0de0ac730!2sInternational%20Cricket%20Council!5e0!3m2!1sen!2s!4v1703918145055!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+          </div>
+          <div class="container px-5 py-24 mx-auto flex">
+            <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+              <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Need any Record</h2>
+              <p class="leading-relaxed mb-5 text-gray-600">Here is all receord as you want with file type</p>
+              <div class="relative mb-4">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <div class="relative mb-4">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+              </div>
+              <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
+              <p class="text-xs text-gray-500 mt-3">The International Cricket Council (ICC) is the global governing body for cricket.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Pakistani VS India</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First over</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second over</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third and forth</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth and fifth</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Pakistan VS Australia</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Wicket</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Wicket</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Wicket</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Wicket</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Hatrick</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First from Srilanka</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Bangladesh</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third England</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth India</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Fastest bowl</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First </a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second </a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third </a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth </a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Break through</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Medin</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Medin</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Medin</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Medin</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-200">
+          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+              <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                <label for="footer-field" class="leading-7 text-sm text-gray-600">Strike Rate</label>
+                <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Search from ICC</button>
+              <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Result latest 30dec 2023
+                <br class="lg:block hidden">International Cricket
+              </p>
+            </div>
+            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Zaryab —
+              <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@Zaryab</a>
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">Enamel pin tousled raclette tacos irony</span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
